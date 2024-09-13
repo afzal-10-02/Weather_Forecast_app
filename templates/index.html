@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather in [State]</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Live Weather Forecast</h1>
+    </header>
+
+    <form action='/forecast' method="post" class='main-form'>
+        <div class="weather-container">
+            <input type="text" id="location" name='location' placeholder="Enter the Location">
+            <button type='submit'> What's the Weather
+            </button>
+        </div>
+    </form>
+
+    <div class="weather-info">
+        <div class="temp-detail">
+            <h2>Current Temperature in {{state_name}}</h2>
+            <h4>{{temp}}</h4>
+        </div>
+
+        <div class="detail">
+            <p><b>Region</b> : {{region}}</p>
+            <p><b>Lattitude</b> : {{lattitude}}</p>
+            <p><b>Longitude</b> : {{longitude}}</p>
+            <p><b>Time-Zone</b> : {{time_zone}}</p>
+        </div>
+
+        <div class="detail">
+            <p><b>Humidity</b> : {{humidity}}</p>
+            <p><b>Sea Level</b> : {{sea_level}}</p>
+            <p><b>Visibility</b> : {{Visibility}}</p>
+            <p><b>Weather Condition</b> : {{Weather_Condition}}</p>
+        </div>
+
+    </div>
+
+    <footer>
+        <a href='https://www.linkedin.com/in/afzal-jamal-457a86266/'><p>Follow me on linkedin</p></a>
+        <p>Contact: afzalj_jamal@srmus.edu.in</p>
+        <p>© 2024 Live Weather Forecast</p>
+    </footer>
+</body>
+</html>

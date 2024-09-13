@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.weather-container {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;    
+}
+.weather-container input{
+    height: 30px;
+    margin-bottom: 10px;
+    width: 35%;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+.weather-container button{
+    width: 20%;
+    height: 25px;
+    background: #4CAF50;
+    border: solid black 2px;
+    border-radius: 10px;
+}
+.temp-detail{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.temp-detail h2{
+    font-size: 30px;
+}
+.temp-detail h4{
+    font-size: 20px;
+}
+.weather-info{
+    height: 350px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.detail{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 100%;
+}
+.detail p{
+    font: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+header {
+    background: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+footer {
+    background: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
